@@ -12,15 +12,15 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <title>LoveOh</title>
+    <title>VALENTINE</title>
     <meta name="description" content="Create and send a personalized Valentine's Day card with beautiful animation. It's a lovely gift idea for couples or friends!" />
 </head>
 
 <body>
 
-    <audio id="background-music">
-        <source src="/assets/intro.mp3" type="audio/mpeg">
-        Your Browser does not supprt the audio element.
+    <audio id="background-music" loop>
+        <source src="assets/intro.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
     </audio>
     
     <!-- Heart-shaped SVG as a background -->
@@ -40,7 +40,7 @@
     <div class="body-wrapper background">
         <nav>
             <div class="navbar-wrapper">
-                <div class="navlogo"><h2>LoveOh</h2></div>
+                <div class="navlogo"><h2>DemzCreates</h2></div>
                 <div class="navlinks"><a href=".">Refresh</a></div>
             </div>
         </nav>
@@ -52,7 +52,7 @@
                         <div class="aside left hide">
                             <div class="video-card">
                                 <div class="glare"></div>
-                                <video src="/assets/funny video.mp4"></video>
+                                <video src="assets/funny video.mp4" controls autoplay muted></video>
                             </div>
                         </div>
                     </div>
@@ -85,17 +85,14 @@
                 <aside>
                     <div class="aside-wrapper">
                         <div class="aside right">
-                            <button id="mute-button"><i class="fa fa-volume-up"></i></button>
-                            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                            <button type="button" id="mute-button" title="Toggle sound"><i class="fa fa-volume-up"></i></button>
+                            <label for="volume-slider">Volume:</label>
+                            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" title="Adjust volume level" placeholder="Volume">
                         </div>
                     </div>
                 </aside>
             </div>
         </div>
-
-        <footer>
-            <a href="https://github.com/2bTwist/Valentines-Day-Web-Project" target="_blank"><p>Designed by E <i style="font-size:20px" class="fa">&#xf09b;</i></p></a>
-        </footer>
     </div>
     
 <!-- Scripts -->
